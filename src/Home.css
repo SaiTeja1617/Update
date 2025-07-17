@@ -1,0 +1,114 @@
+/* 
+button {
+    display: block;
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 10px auto;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: lightgray;
+} */
+
+/* Home.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); /* Subtle gradient background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.home img {
+    width: 300px; /* Adjust size of the metro logo/image */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Optional: slight rounding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.home p {
+    font-size: 18px;
+    color: #333; /* Darker text for readability */
+    margin-bottom: 30px;
+    max-width: 600px; /* Limit width for readability */
+    line-height: 1.5;
+}
+
+.home button {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s; /* Smooth hover effects */
+}
+
+.home button:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Specific button styles */
+.login {
+    background-color: #007bff; /* Blue for Login */
+    color: white;
+}
+
+.login:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.Register {
+    background-color: #28a745; /* Green for Register */
+    color: white;
+}
+
+.Register:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.Metrocard {
+    background-color: #ff9800; /* Orange for Metrocard */
+    color: white;
+}
+
+.Metrocard:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Style the Link component to remove default underline and inherit button styles */
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .home img {
+        width: 200px; /* Smaller image on mobile */
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .home button {
+        width: 100%;
+        max-width: 250px; /* Full-width buttons on small screens */
+    }
+}

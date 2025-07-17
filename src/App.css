@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 480px;
+  width: 90%;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.container p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #444;
+  line-height: 1.6;
+}
+
+button {
+  display: block;
+  width: 80%;
+  margin: 12px auto;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
   color: white;
+  letter-spacing: 0.5px;
 }
 
-.App-link {
-  color: #61dafb;
+button.login {
+  background-color: #007bff;
+}
+button.login:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
+button.register {
+  background-color: #28a745;
+}
+button.register:hover {
+  background-color: #1e7e34;
+}
+
+button.metrocard {
+  background-color: #fd7e14;
+}
+button.metrocard:hover {
+  background-color: #d65f00;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    transform: translateY(30px);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0);
+    opacity: 1;
   }
 }

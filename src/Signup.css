@@ -1,0 +1,128 @@
+/* .Signup {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+  } */
+
+
+  /* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+} */
+
+/* Signup.css */
+.Signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom, #e6f0fa, #ffffff); /* Light gradient for professionalism */
+    font-family: 'Roboto', Arial, sans-serif; /* Clean, professional font */
+    padding: 20px;
+}
+
+form {
+    background: #ffffff; /* White background for form */
+    padding: 40px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Limit width for focus */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h1 {
+    font-size: 28px;
+    color: #2c3e50; /* Dark blue-gray for professionalism */
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1px; /* Slight spacing for elegance */
+}
+
+form label {
+    font-size: 18px;
+    color: #2c3e50; /* Dark blue-gray for text */
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    width: 100%;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease; /* Smooth focus effect */
+}
+
+form input:focus {
+    border-color: #003087; /* Metro blue on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 48, 135, 0.3); /* Subtle glow */
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #003087; /* Metro blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+form button:hover {
+    background: #00205b; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift */
+}
+
+form button:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+/* Error Message */
+form p {
+    font-size: 16px;
+    color: red; /* Matches your inline style */
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline; /* Matches your inline style */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    form h1 {
+        font-size: 24px;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    form input,
+    form button {
+        font-size: 14px;
+    }
+}

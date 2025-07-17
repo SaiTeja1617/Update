@@ -1,0 +1,266 @@
+
+/* .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+} */
+
+/* Top Header */
+/* .header {
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: bold;
+    border: 0px solid black;
+}
+
+/* Navbar */
+/* .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-bottom: 0px solid black;
+    background: white;
+} */
+
+/* .navbar button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+} */
+
+/* .navbar button:hover {
+    background-color: #ddd;
+} */
+
+/* Main content layout */
+/* .main-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 0px solid black;
+    padding: 20px;
+}
+
+
+.imageslider {
+    flex: 2;
+    border: 0px solid black;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
+
+
+/* .form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    border: 0px solid black;
+} */
+
+/* label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+.imageslider h1 {
+    font-size: xx-large;
+    color: blue;
+    text-decoration: underline;
+}
+
+.imageslider p{
+    font-size:xx-large;
+    
+} */
+
+/* Login.css */
+.form-container {
+    display: flex;
+    flex-direction: row; /* Side-by-side layout for slider and form */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    color:black;
+    font-family: 'Roboto', Arial, sans-serif; /* Clean, professional font */
+    padding: 20px;
+}
+
+/* Slider/About Section */
+.imageslider {
+    flex: 1; /* Take up half the space */
+    color:black;
+    color: #ffffff; /* White text for contrast */
+    padding: 40px;
+    border-radius: 15px 0 0 15px; /* Rounded corners on the left */
+    max-width: 500px; /* Limit width */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.imageslider h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Professional emphasis */
+    letter-spacing: 1px;
+    color:black;
+}
+
+.imageslider p {
+    font-size: 16px;
+    line-height: 1.6; /* Readable line spacing */
+    margin: 0;
+    color:black;
+}
+
+/* Form Section */
+form {
+    flex: 1; /* Take up half the space */
+    background: #ffffff; /* White background for form */
+    padding: 40px;
+    border-radius: 0 15px 15px 0; /* Rounded corners on the right */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px; /* Limit width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 18px;
+    color:black;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    color:black;
+    transition: border-color 0.3s ease; /* Smooth focus effect */
+}
+
+form input:focus {
+    border-color: #003087; /* Metro blue on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 48, 135, 0.3); /* Subtle glow */
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #003087; /* Metro blue */
+    
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+form button:hover {
+    
+    transform: translateY(-2px); /* Slight lift */
+}
+
+form button:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+/* Error Message */
+form p {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column; /* Stack on smaller screens */
+    }
+
+    .imageslider {
+        border-radius: 15px 15px 0 0; /* Adjust corners */
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    form {
+        border-radius: 0 0 15px 15px; /* Adjust corners */
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .imageslider h1 {
+        font-size: 24px;
+    }
+
+    .imageslider p {
+        font-size: 14px;
+    }
+
+    form input,
+    form button {
+        font-size: 14px;
+    }
+}

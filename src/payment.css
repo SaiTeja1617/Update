@@ -1,0 +1,139 @@
+/* container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .payment-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .box {
+    width: 150px;
+    height: 100px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .box img {
+    max-width: 100%;
+    max-height: 80%;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+  } */
+
+  /* payment.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  background: #f5f7fa; /* Light gray background for a clean look */
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font */
+}
+
+.title {
+  font-size: 28px;
+  color: #2c3e50; /* Dark blue-gray for professionalism */
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 1px; /* Slight spacing for elegance */
+  text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between boxes */
+  max-width: 800px; /* Limit width for focus */
+  width: 100%;
+}
+
+.box {
+  background: #ffffff; /* White background for cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.box:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.box img {
+  width: 80px; /* Consistent image size */
+  height: auto;
+  margin-bottom: 15px; /* Space between image and text */
+  object-fit: contain; /* Ensure logos fit nicely */
+}
+
+.box p {
+  font-size: 16px;
+  color: #34495e; /* Slightly lighter dark color for text */
+  font-weight: 500; /* Medium weight for readability */
+  text-align: center;
+  margin: 0; /* Remove default margins */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .title {
+      font-size: 24px; /* Smaller title on mobile */
+  }
+
+  .payment-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller boxes */
+      gap: 15px;
+  }
+
+  .box img {
+      width: 60px; /* Smaller images on mobile */
+  }
+
+  .box p {
+      font-size: 14px; /* Smaller text on mobile */
+  }
+}
+
+/* Optional: Add a subtle loading animation for the 5-second redirect */
+.container::before {
+  content: "Redirecting in 5 seconds...";
+  font-size: 14px;
+  color: #7f8c8d; /* Muted gray */
+  position: absolute;
+  bottom: 20px;
+  opacity: 0.8;
+  animation: fadeInOut 5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
